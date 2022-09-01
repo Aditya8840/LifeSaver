@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hospital_charge" type="id" />
+    <item name="service_charge" type="id" />
+    <item name="total_charge" type="id" />
+    <item name="note_emer" type="id" />
+    <item name="full_note" type="id" />
+</resources>

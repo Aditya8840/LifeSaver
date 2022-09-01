@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Nearbyhospital_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:src="@drawable/ellipseup"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:layout_marginBottom="-10dp"
+            android:src="@drawable/ellipsedown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/inter"
+            android:text="Life Saver"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Nearby Hospital"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/hospital1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:fontFamily="@font/inter"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="LCI"
+            android:background="@drawable/custom_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/hospital2"
+            app:layout_constraintTop_toBottomOf="@id/textView2"/>
+        <TextView
+            android:id="@+id/hospital2"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:fontFamily="@font/inter"
+            android:textSize="20dp"
+            android:text="AIIMS"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/custom_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/hospital3"
+            app:layout_constraintTop_toBottomOf="@id/hospital1"/>
+
+        <TextView
+            android:id="@+id/hospital3"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="@font/inter"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:text="MMM"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hospital2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forward_arrow"
+            android:padding="10dp"
+            android:background="@drawable/custom_edittext"
+            app:layout_constraintStart_toStartOf="@id/hospital3"
+            app:layout_constraintEnd_toEndOf="@id/hospital3"
+            app:layout_constraintTop_toBottomOf="@id/hospital3"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

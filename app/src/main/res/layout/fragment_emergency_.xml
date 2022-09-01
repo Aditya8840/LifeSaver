@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Emergency_Fragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:src="@drawable/ellipseup"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:layout_marginBottom="-10dp"
+            android:src="@drawable/ellipsedown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/inter"
+            android:text="Life Saver"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/inter"
+            android:text="Important Details"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Fill the details while\nyou are reaching the hospital"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Patient Name"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Phone No."
+            android:layout_marginTop="30dp"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:contentDescription="@string/gender"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@id/phone" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="center"
+            android:hint="Time of accident"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:padding="10dp"
+            android:src="@drawable/forward_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/time"
+            app:layout_constraintStart_toStartOf="@+id/time"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

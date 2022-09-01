@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Emer_paymentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:src="@drawable/ellipseup"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:layout_marginBottom="-10dp"
+            android:src="@drawable/ellipsedown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/inter"
+            android:text="Life Saver"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Complete Your Payment"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/hospital_charge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@id/hospital_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Hospital Charge:              9999"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/service_charge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@id/service_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Service Charge:             9999"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@id/total_charge"
+            app:layout_constraintEnd_toEndOf="@+id/hospital_charge"
+            app:layout_constraintStart_toStartOf="@+id/hospital_charge"
+            app:layout_constraintTop_toBottomOf="@+id/hospital_charge" />
+
+        <TextView
+            android:id="@id/total_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Total:                              9999"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@id/note_emer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/service_charge" />
+
+        <TextView
+            android:id="@id/note_emer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Note: "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/button_pay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_charge" />
+
+        <TextView
+            android:id="@id/full_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="25% amount is non-refundable if\nyou cancel the bed."
+            android:textColor="#C81717"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/note_emer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/note_emer"
+            app:layout_constraintTop_toTopOf="@id/note_emer" />
+
+        <Button
+            android:id="@+id/button_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/note_emer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Pay" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

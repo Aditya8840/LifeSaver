@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.codiyapa.lifesaver.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_emergency_Fragment"
+            app:destination="@id/emergency_Fragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/emergency_Fragment"
+        android:name="com.codiyapa.lifesaver.fragments.Emergency_Fragment"
+        android:label="fragment_emergency_"
+        tools:layout="@layout/fragment_emergency_" >
+        <action
+            android:id="@+id/action_emergency_Fragment_to_nearbyhospital_Fragment"
+            app:destination="@id/nearbyhospital_Fragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/nearbyhospital_Fragment"
+        android:name="com.codiyapa.lifesaver.fragments.Nearbyhospital_Fragment"
+        android:label="fragment_nearbyhospital_"
+        tools:layout="@layout/fragment_nearbyhospital_" >
+        <action
+            android:id="@+id/action_nearbyhospital_Fragment_to_emer_MapFragment"
+            app:destination="@id/emer_MapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emer_MapFragment"
+        android:name="com.codiyapa.lifesaver.fragments.Emer_MapFragment"
+        android:label="fragment_emer__map"
+        tools:layout="@layout/fragment_emer__map" >
+        <action
+            android:id="@+id/action_emer_MapFragment_to_emer_paymentFragment"
+            app:destination="@id/emer_paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emer_paymentFragment"
+        android:name="com.codiyapa.lifesaver.fragments.Emer_paymentFragment"
+        android:label="fragment_emer_payment"
+        tools:layout="@layout/fragment_emer_payment" />
+</navigation>
